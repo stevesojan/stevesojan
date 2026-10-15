@@ -163,8 +163,30 @@ ${line(`M56 404V24`, "s-bp", 0.55)}
 
 const CARDS = [
   {
+    id: "alphalab",
+    kicker: "04.1 · RUST · PYTHON · QUANT",
+    name: "AlphaLab-NSE",
+    lines: ["NSE alpha research with walk-forward,", "deflated Sharpe and a hold-out, plus", "a Rust market-making simulator."],
+    metric: "Bit-identical · 1.63× numba",
+    stack: "Rust · PyO3 · Polars · MATLAB",
+    glyph: (s) => {
+      // in-sample equity climbs, then flattens after the dashed hold-out line
+      const is = [[276, 172], [288, 160], [298, 164], [310, 146], [322, 138], [334, 124], [344, 128], [356, 104], [368, 92]];
+      const ho = [[368, 92], [380, 100], [392, 90], [404, 102], [418, 96]];
+      const path = (pts) => `M${pts.map(([x, y]) => `${x} ${y}`).join("L")}`;
+      const ticks = [0, 1, 2, 3, 4].map((k) => `M272 ${60 + k * 28}H276`).join("");
+      return `${line("M272 48V182H422", "s-ink3", s)}
+${line(ticks, "s-rule", s + 0.1)}
+${line(path(is), "s-bp", s + 0.3)}
+${line("M368 44V182", "s-bp3", s + 0.6)}
+${line(path(ho), "s-bp7", s + 0.9, 1.4)}
+${line(rectD(376, 140, 40, 34), "s-bp3", s + 1.0)}
+${line("M380 151H412M380 157H404M380 163H408", "s-bp", s + 1.1)}`;
+    },
+  },
+  {
     id: "lob",
-    kicker: "04.1 · RUST · SYSTEMS",
+    kicker: "04.2 · RUST · SYSTEMS",
     name: "Limit Order Book",
     lines: ["Low-latency matching engine with strict", "price-time priority, event sourcing", "and deterministic replay."],
     metric: "O(1) routing · O(log P) levels",
@@ -222,7 +244,7 @@ ${line("M398 98A9 9 0 1 1 397.9 98M391 89H405M398 82V96", "s-bp7", s + 1.0)}`,
   },
   {
     id: "workhorse",
-    kicker: "04.2 · RAG · LLM",
+    kicker: "04.3 · RAG · LLM",
     name: "WorkHorse AI",
     lines: ["Agro-financial advisor: retrieval over", "NCDEX crop futures with a 4-bit", "Mistral-7B served by llama.cpp."],
     metric: "Q4_K_M · hardware-agnostic",
@@ -236,7 +258,7 @@ ${line("M328 87H350M394 94V128M302 112V152H326", "s-bp7", s + 0.7)}
   },
   {
     id: "foursight",
-    kicker: "04.3 · VISION · MARKETS",
+    kicker: "04.4 · VISION · MARKETS",
     name: "4-Sight",
     lines: ["A ViT-16 reads annotated candlestick", "charts alongside OHLCV, TA-Lib and", "microstructure features."],
     metric: "+14.3% prediction accuracy",
@@ -262,7 +284,7 @@ ${line(`M${r(p.x + 20)} ${r(p.mid)}L${r(candles[9].x)} ${r(p.mid + 10)}L${r(cand
   },
   {
     id: "zelestra",
-    kicker: "04.4 · ENSEMBLES · COMPETITION",
+    kicker: "04.5 · ENSEMBLES · COMPETITION",
     name: "Zelestra × AWS",
     lines: ["8-model stacked ensemble, boosting", "and neural learners, under a Ridge", "meta-learner for solar efficiency."],
     metric: "Top 9% · rank 61 of ~700",
@@ -325,7 +347,7 @@ ${brackets(0.5, 0.5, W - 1, H - 1, "s-bp", 0, 7)}
 /* ------------------------------------------------------------------ toolkit */
 
 const TOOLKIT = [
-  ["LANGUAGES", ["Python", "Rust", "SQL", "LaTeX"]],
+  ["LANGUAGES", ["Python", "Rust", "SQL", "LaTeX", "MATLAB"]],
   ["AI / ML FRAMEWORKS", ["PyTorch", "NumPy · Pandas · Polars", "XGBoost · LightGBM · CatBoost", "LlamaIndex", "llama.cpp", "TA-Lib"]],
   ["ML METHODS", ["Transformers", "LoRA / PEFT", "Kolmogorov–Arnold Networks", "RAG systems · LLMs", "Ensemble methods", "Tabular foundation models"]],
   ["DATA & STORAGE", ["PostgreSQL", "ChromaDB", "Tableau", "MS Excel"]],

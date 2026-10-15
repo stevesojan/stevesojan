@@ -21,15 +21,18 @@ My work spans models and systems: fine-tuning foundation models, rethinking arch
 ### Selected work
 
 <p>
+  <a href="https://github.com/stevesojan/alphalab-nse"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-alphalab-dark.svg"><img alt="AlphaLab-NSE: alpha research on NSE equities with walk-forward validation, deflated Sharpe and a one-shot hold-out, plus a Rust price-time-priority market-making simulator." src="assets/card-alphalab-light.svg" width="49%"></picture></a>
   <a href="https://github.com/stevesojan/limit-order-book"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-lob-dark.svg"><img alt="Limit Order Book: low-latency matching engine in Rust with strict price-time priority, event sourcing and deterministic replay." src="assets/card-lob-light.svg" width="49%"></picture></a>
+</p>
+<p>
   <a href="https://github.com/stevesojan/tabpfn-lora"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-lora-dark.svg"><img alt="TabPFN-LoRA: LoRA adapters on the attention QKV projections of a tabular foundation model, with the backbone frozen." src="assets/card-lora-light.svg" width="49%"></picture></a>
-</p>
-<p>
   <a href="https://github.com/stevesojan/Transformer-KAN"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-kan-dark.svg"><img alt="Transformer-KAN: feed-forward layers replaced by Kolmogorov–Arnold Networks with learnable spline edges." src="assets/card-kan-light.svg" width="49%"></picture></a>
-  <a href="https://gitlab.com/workhorse4/workhorse-ai"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-workhorse-dark.svg"><img alt="WorkHorse AI: agro-financial advisor using retrieval over NCDEX crop futures with a 4-bit Mistral-7B served by llama.cpp." src="assets/card-workhorse-light.svg" width="49%"></picture></a>
 </p>
 <p>
+  <a href="https://gitlab.com/workhorse4/workhorse-ai"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-workhorse-dark.svg"><img alt="WorkHorse AI: agro-financial advisor using retrieval over NCDEX crop futures with a 4-bit Mistral-7B served by llama.cpp." src="assets/card-workhorse-light.svg" width="49%"></picture></a>
   <a href="https://github.com/stevesojan/4sight"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-foursight-dark.svg"><img alt="4-Sight: a ViT-16 reads annotated candlestick charts alongside OHLCV, TA-Lib and microstructure features." src="assets/card-foursight-light.svg" width="49%"></picture></a>
+</p>
+<p>
   <a href="https://github.com/stevesojan/zelestra_challenge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-zelestra-dark.svg"><img alt="Zelestra × AWS ML Ascend: 8-model stacked ensemble under a Ridge meta-learner, top 9% of about 700." src="assets/card-zelestra-light.svg" width="49%"></picture></a>
 </p>
 
@@ -39,7 +42,7 @@ My work spans models and systems: fine-tuning foundation models, rethinking arch
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/toolkit-dark.svg">
-  <img alt="Toolkit. Languages: Python, Rust, SQL, LaTeX. AI/ML frameworks: PyTorch, NumPy, Pandas, Polars, XGBoost, LightGBM, CatBoost, LlamaIndex, llama.cpp, TA-Lib. ML methods: Transformers, LoRA/PEFT, Kolmogorov–Arnold Networks, RAG systems, LLMs, ensemble methods, tabular foundation models. Data: PostgreSQL, ChromaDB, Tableau, MS Excel. Infra: Git, GitHub Actions, Linux, Docker, AWS, Streamlit." src="assets/toolkit-light.svg" width="100%">
+  <img alt="Toolkit. Languages: Python, Rust, SQL, LaTeX, MATLAB. AI/ML frameworks: PyTorch, NumPy, Pandas, Polars, XGBoost, LightGBM, CatBoost, LlamaIndex, llama.cpp, TA-Lib. ML methods: Transformers, LoRA/PEFT, Kolmogorov–Arnold Networks, RAG systems, LLMs, ensemble methods, tabular foundation models. Data: PostgreSQL, ChromaDB, Tableau, MS Excel. Infra: Git, GitHub Actions, Linux, Docker, AWS, Streamlit." src="assets/toolkit-light.svg" width="100%">
 </picture>
 
 ### Experience
